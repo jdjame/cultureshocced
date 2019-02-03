@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>{{p.name}}</title>
+</head>
+<body>
+<h1>Welcome to {{p.name}}'s Profile</h1>
+
+<h2> About {{p.name}}</h2>
+{{p.bio}}
+<br>
+
+<img class="post-avatar" src="{{"/static/images/"~p.username ~ "_profile_pic"}}" align="right">
+<h3> Chat with {{p.username}}</h3>
+<a href= "{{ '/friend/' ~ p.username ~ "-" ~ p.location}}" > <h3> Add {{p.username}} as a connection </h3> </a>
+<form action="{{ '/message/' ~ p.email ~ "-" ~ p.location}}" method="post">
+Message:<br><textarea rows="5" cols="60" name="message"></textarea>
+<input type="submit" name="submit">
+</form>
+</body>
+
+
+</html>

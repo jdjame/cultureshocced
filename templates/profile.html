@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+<body>
+
+<form class="pure-form pure-form-aligned" action="/signup" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Login Form</legend>
+
+<div class="pure-control-group">
+        <label for="name">Name</label>
+       	<input id="name" type="text" placeholder="Name" name="namee">
+</div>
+
+<div class="pure-control-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email" name="emailaddress">
+</div>
+
+<div class="pure-control-group">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="username" name="username">
+</div>
+
+<div class="pure-control-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Password" name="password">
+</div>
+
+<div class="pure-control-group">
+        <label for="nationality">Nationality</label>
+       	<input id="nationality" type="text" placeholder="Nationality" name="nationality">
+</div>
+
+<div class="pure-control-group">
+        <label for="nationality">Spoken languages</label>
+        <input id="languages-spoken" type="text" placeholder="Languages spoken" name="languages spoken">
+</div>
+
+<div class="pure-control-group">
+        <label for="location">Location</label>
+        <select id="location" name="location">
+            <option>Montreal</option>
+            <option>New York</option>
+            <option>Singapore</option>
+            <option>Hoi An</option>
+            <option>Paris</option>
+            <option>Mexico City</option>
+            <option>Nairobi</option>
+        </select>
+</div>
+
+<div class="pure-control-group">
+        <label for="bio">Bio</label>
+        <textarea rows="5" cols="60" name="Bio"></textarea>
+</div>
+
+<div class="pure-control-group">
+        <label for="interests">Interests</label>
+        <input id="interests" type="text" placeholder="Interests" name="interests">
+</div>
+
+<div class="pure-controls">
+<label for="photo1">Photo</label>
+        <input id="photo1" type="file" name="photo1"/>
+</div>
+
+<div class="pure-controls">
+        <button type="submit" class="pure-button pure-button-primary" value="Submit">Sign up</button>
+</div>
+
+    </fieldset>
+</form>
+
+</body>
+</html>

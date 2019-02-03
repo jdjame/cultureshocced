@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Timeline </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+</head>
+<h1>Available profiles in {{profiles[0].location}}</h1>
+<body>
+<section class="post">
+{% for p in profiles %}
+
+
+</section>
+<a href="{{ "/profile/" ~ p.username ~ "-" ~ p.location}}" style="text-decoration:none;color:black" >
+ <section class="post">
+      <header class="post-header">
+    <img Height="150" class="post-avatar" src="{{"/static/images/"~p.username ~ "_profile_pic"}}" align="right">
+    <h2 class="post-title">{{ p.name }}</h2>
+    </header>
+<div class="Container" align="left " class="pure-control-group">
+<div>
+Nationality: {{p.nationality}}
+</div>
+<div>
+Languages Spoken: {{p.languages_spoken}}
+</div>
+Interests: {{p.interests}}
+                    </div> 
+<div>
+Rating: {{p.rating}}
+</div>
+                </section><br><br>
+</a>
+
+{% endfor %}
+</body>
+</html>
